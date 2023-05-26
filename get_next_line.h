@@ -6,7 +6,7 @@
 /*   By: fivieira <fivieira@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/25 15:12:05 by fivieira          #+#    #+#             */
-/*   Updated: 2023/05/25 16:13:02 by fivieira         ###   ########.fr       */
+/*   Updated: 2023/05/26 16:54:06 by fivieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,14 @@
 #  define BUFFER_SIZE 42
 # endif
 
+# ifndef MAX_FD
+#  define MAX_FD 256
+# endif
+
 char	*get_next_line(int fd);
-size_t	ft_strlen(const char *str);
-char	*ft_strchr(const char *s, int c);
-char	*ft_strjoin(char const *s1, char const *s2);
-void	*ft_calloc(size_t nitems, size_t size);
-void	*ft_memset(void *str, int c, size_t n);
+char	*ft_read_and_join(int fd, char *temp);
+int		ft_strlen(char *str);
+char	*ft_strchr(char *s, char c);
+char	*ft_strjoin(char *temp, char *buffer);
 
 #endif
