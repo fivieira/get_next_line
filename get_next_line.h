@@ -6,7 +6,7 @@
 /*   By: fivieira <fivieira@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/25 15:12:05 by fivieira          #+#    #+#             */
-/*   Updated: 2023/05/26 16:54:06 by fivieira         ###   ########.fr       */
+/*   Updated: 2023/05/27 15:06:57 by fivieira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,8 @@
 # include <stdlib.h>
 # include <limits.h>
 
-
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
-# endif
-
-# ifndef MAX_FD
-#  define MAX_FD 256
 # endif
 
 char	*get_next_line(int fd);
